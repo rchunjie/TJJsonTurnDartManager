@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3453748B2627CD3100D3FC69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3453748A2627CD3100D3FC69 /* AppDelegate.m */; };
+		3453748E2627CD3100D3FC69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3453748D2627CD3100D3FC69 /* ViewController.m */; };
+		345374902627CD3100D3FC69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3453748F2627CD3100D3FC69 /* Assets.xcassets */; };
+		345374932627CD3100D3FC69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345374912627CD3100D3FC69 /* Main.storyboard */; };
+		345374962627CD3100D3FC69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345374952627CD3100D3FC69 /* main.m */; };
+		345374A12627CD3200D3FC69 /* TJJsonTurnDartManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345374A02627CD3200D3FC69 /* TJJsonTurnDartManagerTests.m */; };
+		345374AC2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345374AB2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3453749D2627CD3200D3FC69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3453747E2627CD3100D3FC69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 345374852627CD3100D3FC69;
+			remoteInfo = TJJsonTurnDartManager;
+		};
+		345374A82627CD3200D3FC69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3453747E2627CD3100D3FC69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 345374852627CD3100D3FC69;
+			remoteInfo = TJJsonTurnDartManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		345374862627CD3100D3FC69 /* TJJsonTurnDartManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJJsonTurnDartManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		345374892627CD3100D3FC69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3453748A2627CD3100D3FC69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3453748C2627CD3100D3FC69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3453748D2627CD3100D3FC69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3453748F2627CD3100D3FC69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		345374922627CD3100D3FC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		345374942627CD3100D3FC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345374952627CD3100D3FC69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345374972627CD3100D3FC69 /* TJJsonTurnDartManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TJJsonTurnDartManager.entitlements; sourceTree = "<group>"; };
+		3453749C2627CD3200D3FC69 /* TJJsonTurnDartManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJJsonTurnDartManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		345374A02627CD3200D3FC69 /* TJJsonTurnDartManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJJsonTurnDartManagerTests.m; sourceTree = "<group>"; };
+		345374A22627CD3200D3FC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345374A72627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJJsonTurnDartManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		345374AB2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJJsonTurnDartManagerUITests.m; sourceTree = "<group>"; };
+		345374AD2627CD3200D3FC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		345374832627CD3100D3FC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345374992627CD3200D3FC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345374A42627CD3200D3FC69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3453747D2627CD3100D3FC69 = {
+			isa = PBXGroup;
+			children = (
+				345374882627CD3100D3FC69 /* TJJsonTurnDartManager */,
+				3453749F2627CD3200D3FC69 /* TJJsonTurnDartManagerTests */,
+				345374AA2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests */,
+				345374872627CD3100D3FC69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		345374872627CD3100D3FC69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345374862627CD3100D3FC69 /* TJJsonTurnDartManager.app */,
+				3453749C2627CD3200D3FC69 /* TJJsonTurnDartManagerTests.xctest */,
+				345374A72627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345374882627CD3100D3FC69 /* TJJsonTurnDartManager */ = {
+			isa = PBXGroup;
+			children = (
+				345374892627CD3100D3FC69 /* AppDelegate.h */,
+				3453748A2627CD3100D3FC69 /* AppDelegate.m */,
+				3453748C2627CD3100D3FC69 /* ViewController.h */,
+				3453748D2627CD3100D3FC69 /* ViewController.m */,
+				3453748F2627CD3100D3FC69 /* Assets.xcassets */,
+				345374912627CD3100D3FC69 /* Main.storyboard */,
+				345374942627CD3100D3FC69 /* Info.plist */,
+				345374952627CD3100D3FC69 /* main.m */,
+				345374972627CD3100D3FC69 /* TJJsonTurnDartManager.entitlements */,
+			);
+			path = TJJsonTurnDartManager;
+			sourceTree = "<group>";
+		};
+		3453749F2627CD3200D3FC69 /* TJJsonTurnDartManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				345374A02627CD3200D3FC69 /* TJJsonTurnDartManagerTests.m */,
+				345374A22627CD3200D3FC69 /* Info.plist */,
+			);
+			path = TJJsonTurnDartManagerTests;
+			sourceTree = "<group>";
+		};
+		345374AA2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				345374AB2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.m */,
+				345374AD2627CD3200D3FC69 /* Info.plist */,
+			);
+			path = TJJsonTurnDartManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		345374852627CD3100D3FC69 /* TJJsonTurnDartManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345374B02627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManager" */;
+			buildPhases = (
+				345374822627CD3100D3FC69 /* Sources */,
+				345374832627CD3100D3FC69 /* Frameworks */,
+				345374842627CD3100D3FC69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TJJsonTurnDartManager;
+			productName = TJJsonTurnDartManager;
+			productReference = 345374862627CD3100D3FC69 /* TJJsonTurnDartManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3453749B2627CD3200D3FC69 /* TJJsonTurnDartManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345374B32627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManagerTests" */;
+			buildPhases = (
+				345374982627CD3200D3FC69 /* Sources */,
+				345374992627CD3200D3FC69 /* Frameworks */,
+				3453749A2627CD3200D3FC69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3453749E2627CD3200D3FC69 /* PBXTargetDependency */,
+			);
+			name = TJJsonTurnDartManagerTests;
+			productName = TJJsonTurnDartManagerTests;
+			productReference = 3453749C2627CD3200D3FC69 /* TJJsonTurnDartManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		345374A62627CD3200D3FC69 /* TJJsonTurnDartManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345374B62627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManagerUITests" */;
+			buildPhases = (
+				345374A32627CD3200D3FC69 /* Sources */,
+				345374A42627CD3200D3FC69 /* Frameworks */,
+				345374A52627CD3200D3FC69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				345374A92627CD3200D3FC69 /* PBXTargetDependency */,
+			);
+			name = TJJsonTurnDartManagerUITests;
+			productName = TJJsonTurnDartManagerUITests;
+			productReference = 345374A72627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3453747E2627CD3100D3FC69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					345374852627CD3100D3FC69 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3453749B2627CD3200D3FC69 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 345374852627CD3100D3FC69;
+					};
+					345374A62627CD3200D3FC69 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 345374852627CD3100D3FC69;
+					};
+				};
+			};
+			buildConfigurationList = 345374812627CD3100D3FC69 /* Build configuration list for PBXProject "TJJsonTurnDartManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3453747D2627CD3100D3FC69;
+			productRefGroup = 345374872627CD3100D3FC69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				345374852627CD3100D3FC69 /* TJJsonTurnDartManager */,
+				3453749B2627CD3200D3FC69 /* TJJsonTurnDartManagerTests */,
+				345374A62627CD3200D3FC69 /* TJJsonTurnDartManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		345374842627CD3100D3FC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345374902627CD3100D3FC69 /* Assets.xcassets in Resources */,
+				345374932627CD3100D3FC69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3453749A2627CD3200D3FC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345374A52627CD3200D3FC69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		345374822627CD3100D3FC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3453748E2627CD3100D3FC69 /* ViewController.m in Sources */,
+				345374962627CD3100D3FC69 /* main.m in Sources */,
+				3453748B2627CD3100D3FC69 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345374982627CD3200D3FC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345374A12627CD3200D3FC69 /* TJJsonTurnDartManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		345374A32627CD3200D3FC69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345374AC2627CD3200D3FC69 /* TJJsonTurnDartManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3453749E2627CD3200D3FC69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 345374852627CD3100D3FC69 /* TJJsonTurnDartManager */;
+			targetProxy = 3453749D2627CD3200D3FC69 /* PBXContainerItemProxy */;
+		};
+		345374A92627CD3200D3FC69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 345374852627CD3100D3FC69 /* TJJsonTurnDartManager */;
+			targetProxy = 345374A82627CD3200D3FC69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		345374912627CD3100D3FC69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345374922627CD3100D3FC69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		345374AE2627CD3200D3FC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		345374AF2627CD3200D3FC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		345374B12627CD3200D3FC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TJJsonTurnDartManager/TJJsonTurnDartManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TJJsonTurnDartManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		345374B22627CD3200D3FC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TJJsonTurnDartManager/TJJsonTurnDartManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TJJsonTurnDartManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		345374B42627CD3200D3FC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				INFOPLIST_FILE = TJJsonTurnDartManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TJJsonTurnDartManager.app/Contents/MacOS/TJJsonTurnDartManager";
+			};
+			name = Debug;
+		};
+		345374B52627CD3200D3FC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				INFOPLIST_FILE = TJJsonTurnDartManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TJJsonTurnDartManager.app/Contents/MacOS/TJJsonTurnDartManager";
+			};
+			name = Release;
+		};
+		345374B72627CD3200D3FC69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				INFOPLIST_FILE = TJJsonTurnDartManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TJJsonTurnDartManager;
+			};
+			name = Debug;
+		};
+		345374B82627CD3200D3FC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JRJGSF2T2X;
+				INFOPLIST_FILE = TJJsonTurnDartManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tongji.dev.im.TJJsonTurnDartManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TJJsonTurnDartManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		345374812627CD3100D3FC69 /* Build configuration list for PBXProject "TJJsonTurnDartManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345374AE2627CD3200D3FC69 /* Debug */,
+				345374AF2627CD3200D3FC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345374B02627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345374B12627CD3200D3FC69 /* Debug */,
+				345374B22627CD3200D3FC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345374B32627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345374B42627CD3200D3FC69 /* Debug */,
+				345374B52627CD3200D3FC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		345374B62627CD3200D3FC69 /* Build configuration list for PBXNativeTarget "TJJsonTurnDartManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345374B72627CD3200D3FC69 /* Debug */,
+				345374B82627CD3200D3FC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3453747E2627CD3100D3FC69 /* Project object */;
+}
