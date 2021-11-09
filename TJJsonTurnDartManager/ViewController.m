@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 #import "TJJSONConversionDart.h"
-@interface ViewController()
+@interface ViewController()<TJJSONConversionDeleage>
 @property (weak) IBOutlet NSTextFieldCell *inputJsonField;
 
 @property (weak) IBOutlet NSTextField *classHeaderField;
@@ -18,6 +18,7 @@
 @property (weak) IBOutlet NSTextField *outPathField;
 
 @property (weak) IBOutlet NSTextField *tipLabel;
+@property (weak) IBOutlet NSSwitch *nullSwitch;
 
 /// 转换模型
 @property(nonatomic,strong)TJJSONConversionDart *conversionDart;
@@ -33,12 +34,12 @@
 - (void)bindingData{
     __weak typeof(self) wself = self;
     [NSEvent addLocalMonitorForEventsMatchingMask:NSEventMaskLeftMouseDown|NSEventMaskLeftMouseDragged|NSEventMaskRightMouseDown handler:^NSEvent * _Nullable(NSEvent * _Nonnull event) {
-       NSPoint p = [event locationInWindow];
-       if (p.x >= wself.tipLabel.frame.origin.x && p.y >= wself.tipLabel.frame.origin.y && p.x <= CGRectGetMaxX(wself.tipLabel.frame) && p.y <= CGRectGetMaxY(wself.tipLabel.frame)) {
-           [wself copyTipLabel:wself.tipLabel];
-       }
-       return event;
-   }];
+        NSPoint p = [event locationInWindow];
+        if (p.x >= wself.tipLabel.frame.origin.x && p.y >= wself.tipLabel.frame.origin.y && p.x <= CGRectGetMaxX(wself.tipLabel.frame) && p.y <= CGRectGetMaxY(wself.tipLabel.frame)) {
+            [wself copyTipLabel:wself.tipLabel];
+        }
+        return event;
+    }];
 }
 
 - (IBAction)jsonChoiceBtn:(id)sender {
@@ -71,7 +72,7 @@
 }
 - (IBAction)jsonOutPathBtn:(id)sender {
     printf("请选择json输出文件路径");
-   
+    
 }
 
 - (void)_copyTipLabelGestureRecognizer:(id)tap{
@@ -109,6 +110,7 @@
                 self.tipLabel.stringValue = [NSString stringWithFormat:@"文件输出路径为:%@",path];
             }
         }];
+        _conversionDart.deleage = self;
     }
     [self.conversionDart updateClassEnd:self.classEndFiled.stringValue];
     [self.conversionDart updateOutPath:self.outPathField.stringValue];
@@ -127,12 +129,12 @@
     
 }
 
-
+- (BOOL)whetherToEnableAirAecurityAuthentication{
+    return self.nullSwitch.state == NSControlStateValueOn;
+}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
 }
 
 

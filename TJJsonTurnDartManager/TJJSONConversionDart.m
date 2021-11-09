@@ -25,6 +25,9 @@
 /// 存储List解析方法数据
 @property(nonatomic,strong)NSMutableDictionary *listMethods;
 
+/// 空安全字符串
+@property (nonatomic,copy) NSString *nullString;
+
 @end
 
 @implementation TJJSONConversionDart
@@ -111,7 +114,7 @@
     if (self.outPath.length <= 0) {
         NSArray * documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString * documentDirectory = [documentPaths objectAtIndex:0];
-    
+        
         self.outPath = documentDirectory;
     }
     if (self.outPath.length > 0 && self.fileName.length > 0) {
@@ -138,6 +141,7 @@
     if ([json isKindOfClass:[NSArray class]]) {
         dic = json;
     }
+    NSString *nullString = self.nullString;
     NSMutableString *framJson = [[NSMutableString alloc] init];
     if ([dic isKindOfClass:[NSDictionary class]] || [dic isKindOfClass:[NSArray class]]) {
         if ([(NSDictionary *)dic isKindOfClass:[NSDictionary class]]) {
@@ -146,30 +150,33 @@
                     NSString *keyJsonClassName = [self _getClassNameKey:key];
                     NSString *jsonClassName = keyJsonClassName;
                     [self.dataJsonArray addObject:[self _jsonDataToDealWith:obj className:jsonClassName]];
-                    
-                    [paramsString appendFormat:@"\n%@ %@;\n",jsonClassName,key];
+                    [paramsString appendFormat:@"\n%@%@ %@;\n",jsonClassName,nullString,key];
                 }
                 else if([obj isKindOfClass:[NSArray class]]){
                     NSString *keyJsonClassName = [self _jsonFromArray:obj keyJsonClassName:key];
-                    [paramsString appendFormat:@"\nList<%@> %@;\n",keyJsonClassName,key];
+                    [paramsString appendFormat:@"\nList<%@>%@ %@;\n",keyJsonClassName,nullString,key];
                     [self.listMethods setObject:obj forKey:keyJsonClassName];
                 }
                 else{
                     [paramsString appendFormat:@"%@", [NSString stringWithFormat:@"\n%@ %@;\n",[self _getValueTypes:obj],key]];
                 }
-                [framJson appendString:[NSString stringWithFormat:@"\n%@\n",[self _getFramJsonDicKey:key obj:obj mapName:@"map"]]];
+                NSString *mapName = nullString.length > 0?@"params":@"map";
+                
+                [framJson appendString:[NSString stringWithFormat:@"\n%@\n",[self _getFramJsonDicKey:key obj:obj mapName:mapName]]];
             }];
         }else{
-            [paramsString appendString:[NSString stringWithFormat:@"\nList<%@> list;\n",[self _jsonFromArray:dic keyJsonClassName:@"list"]]];
+            [paramsString appendString:[NSString stringWithFormat:@"\nList<%@>%@ list;\n",[self _jsonFromArray:dic keyJsonClassName:@"list"],nullString]];
         }
     }else{
         
         !self.configBlock?:self.configBlock(@"",@"",[[NSError alloc] initWithDomain:NSCocoaErrorDomain code:-1 userInfo:@{@"msg":@"数据错误"}]);
         return @"";
     }
-    
-    
-    NSString *framJson01 = [NSString stringWithFormat:@"%@.formJson({Map<String, dynamic> map}){\n%@\n}",className,framJson];
+    // 判断是否开始空安全
+
+    NSString *nullStringLogic = (nullString.length > 0 && framJson.length > 0) ? @"Map<String,dynamic> params = map ?? {};":@"";
+    // Class 方法创建
+    NSString *framJson01 = [NSString stringWithFormat:@"%@.formJson({Map<String, dynamic>%@ map}){\n%@\n%@\n}",className,self.nullString,nullStringLogic,framJson];
     NSString *arrayMapToJson = @"";
     NSString * dartJson = [NSString stringWithFormat:@"class %@ {\n%@\n%@\n%@\n}",className,paramsString,framJson01,arrayMapToJson];
     
@@ -178,7 +185,7 @@
 
 - (NSString *)_getArrayObjcClass:(NSString *)objcClass{
     NSMutableString *jsonModels = [[NSMutableString alloc] init];
-    [jsonModels appendFormat:@"\nList<%@> models = [];\n",objcClass];
+    [jsonModels appendFormat:@"\nList<%@>%@ models = [];\n",objcClass,self.nullString];
     [jsonModels appendFormat:@"jsons.forEach((element) {models.add(%@.formJson(map: element));}); return models;",objcClass];
     return jsonModels;
 }
@@ -210,6 +217,7 @@
         return json;
     }
     else{
+        // Class 转换 参数判空拼接
         NSString *json = [NSString stringWithFormat:@"if (%@['%@'] != null){\n   %@ = %@['%@']%@;\n}\n",mapName,key,key,mapName,key,toJson];
         return json;
     }
@@ -228,28 +236,32 @@
 }
 
 - (NSString *)_getValueTypes:(id)value{
+    NSString *nullString = self.nullString;
     if ([value isKindOfClass:[NSDictionary class]]) {
-        return  @"Map";
+        return  [NSString stringWithFormat:@"Map%@",nullString];
     }
     if ([value isKindOfClass:[NSNumber class]]) {
         if ([self isBoolNumber:value]) {
-            return @"bool";
+            return [NSString stringWithFormat:@"bool%@",nullString];
         }
         if (strcmp([value objCType], @encode(float)) == 0) {
-            return @"float";
+            return [NSString stringWithFormat:@"float%@",nullString];
         }
         if (strcmp([value objCType], @encode(double)) == 0) {
-            return @"double";
+            return [NSString stringWithFormat:@"double%@",nullString];
         }
         if (strcmp([value objCType], @encode(int))== 0) {
-            return @"int";
+            
+            return [NSString stringWithFormat:@"int%@",nullString];
         }
         if (strcmp([value objCType], @encode(long))== 0) {
-            return @"int";
+            
+            return [NSString stringWithFormat:@"int%@",nullString];
         }
-        return @"int";
+        return [NSString stringWithFormat:@"int%@",nullString];
     }
-    return @"String";
+    
+    return [NSString stringWithFormat:@"String%@",nullString];
 }
 
 - (BOOL) isBoolNumber:(NSNumber *)num
@@ -295,4 +307,21 @@
     }
     return _listMethods;
 }
+
+- (NSString *)_getNullString{
+    if (self.deleage && [self.deleage respondsToSelector:@selector(whetherToEnableAirAecurityAuthentication)]) {
+        BOOL showNull = [self.deleage whetherToEnableAirAecurityAuthentication];
+        if (showNull) {
+            return @"?";
+        }else{
+            return @"";
+        }
+    }else{
+        return @"";
+    }
+}
+- (NSString *)nullString{
+    return [self _getNullString];
+}
+
 @end

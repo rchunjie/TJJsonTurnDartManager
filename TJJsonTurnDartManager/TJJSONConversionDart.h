@@ -9,6 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol TJJSONConversionDeleage <NSObject>
+
+@optional
+// 是否开启空安全验证
+- (BOOL)whetherToEnableAirAecurityAuthentication;
+
+@end
 @interface TJJSONConversionDart : NSObject
 
 
@@ -35,6 +42,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// class尾部拼接更新
 /// @param end class尾部名字
 - (void)updateClassEnd:(NSString *)end;
+
+///
+@property (nonatomic,weak) id <TJJSONConversionDeleage> deleage;
 
 @end
 

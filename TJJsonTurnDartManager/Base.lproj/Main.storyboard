@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19455"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -687,12 +688,12 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="600" height="370.80000000000001"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="480" height="270"/>
-                        <value key="maxSize" type="size" width="480" height="270"/>
-                        <value key="minFullScreenContentSize" type="size" width="480" height="270"/>
-                        <value key="maxFullScreenContentSize" type="size" width="480" height="270"/>
+                        <value key="minSize" type="size" width="600" height="370.80000000000001"/>
+                        <value key="maxSize" type="size" width="600" height="370.80000000000001"/>
+                        <value key="minFullScreenContentSize" type="size" width="600" height="370.80000000000001"/>
+                        <value key="maxFullScreenContentSize" type="size" width="600" height="370.80000000000001"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -714,7 +715,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UkJ-xN-IJJ" userLabel="fileClassHeaser">
-                                <rect key="frame" x="179" y="180" width="169" height="20"/>
+                                <rect key="frame" x="179" y="140" width="169" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Ubd-wW-OdN"/>
                                 </constraints>
@@ -725,7 +726,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aiH-c4-yka" userLabel="fileName">
-                                <rect key="frame" x="10" y="180" width="169" height="20"/>
+                                <rect key="frame" x="10" y="140" width="169" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="KXw-fm-wln"/>
                                 </constraints>
@@ -736,7 +737,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D4C-5b-qvL" userLabel="输出路径选择">
-                                <rect key="frame" x="520" y="203" width="62" height="32"/>
+                                <rect key="frame" x="520" y="163" width="62" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="4nY-oY-zLu"/>
                                     <constraint firstAttribute="height" constant="20" id="esQ-vV-fDp"/>
@@ -750,7 +751,7 @@
                                 </buttonCell>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-xh-wZB" userLabel="outPathField">
-                                <rect key="frame" x="10" y="210" width="507" height="20"/>
+                                <rect key="frame" x="10" y="170" width="507" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="1CP-E5-Y5P"/>
                                 </constraints>
@@ -764,7 +765,7 @@
                                 </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BHV-Mo-fuf" userLabel="Json路径选择">
-                                <rect key="frame" x="520" y="233" width="62" height="32"/>
+                                <rect key="frame" x="520" y="193" width="62" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="T1V-xr-2Dt"/>
                                     <constraint firstAttribute="width" constant="48" id="jNh-8O-HsN"/>
@@ -778,7 +779,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nTw-F0-6Cy" userLabel="pathTextField">
-                                <rect key="frame" x="10" y="240" width="507" height="20"/>
+                                <rect key="frame" x="10" y="200" width="507" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="jZb-4T-Ik9"/>
                                 </constraints>
@@ -803,7 +804,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XYE-1j-g2h" userLabel="tipLabel">
-                                <rect key="frame" x="8" y="154" width="579" height="16"/>
+                                <rect key="frame" x="8" y="114" width="579" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="16" id="9j2-8W-scM"/>
                                 </constraints>
@@ -817,7 +818,7 @@
                                 </connections>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-oj-UdB" userLabel="fileClassEnd">
-                                <rect key="frame" x="348" y="180" width="169" height="20"/>
+                                <rect key="frame" x="348" y="140" width="169" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="sc6-0p-ODN"/>
                                 </constraints>
@@ -827,12 +828,25 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-sN-6vC">
+                                <rect key="frame" x="20" y="242" width="131" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="是否开启空安全(默认开启)" id="lGQ-fG-fiT">
+                                    <font key="font" metaFont="system" size="10"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" baseWritingDirection="leftToRight" alignment="left" state="on" translatesAutoresizingMaskIntoConstraints="NO" id="Bn1-mK-y2z">
+                                <rect key="frame" x="155" y="237" width="42" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </switch>
                         </subviews>
                         <constraints>
                             <constraint firstItem="UkJ-xN-IJJ" firstAttribute="width" secondItem="aiH-c4-yka" secondAttribute="width" id="08s-WH-5Zh"/>
                             <constraint firstItem="XYE-1j-g2h" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="0ls-Sx-UBL"/>
                             <constraint firstItem="UkJ-xN-IJJ" firstAttribute="centerY" secondItem="aiH-c4-yka" secondAttribute="centerY" id="2tR-VE-3nL"/>
-                            <constraint firstItem="BHV-Mo-fuf" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="Gdr-gk-oOX"/>
+                            <constraint firstItem="BHV-Mo-fuf" firstAttribute="top" secondItem="nTw-F0-6Cy" secondAttribute="top" id="Gdr-gk-oOX"/>
                             <constraint firstItem="UkJ-xN-IJJ" firstAttribute="leading" secondItem="aiH-c4-yka" secondAttribute="trailing" id="Ie4-It-0aj"/>
                             <constraint firstItem="aiH-c4-yka" firstAttribute="top" secondItem="2Ch-xh-wZB" secondAttribute="bottom" constant="10" id="JEb-OJ-7fk"/>
                             <constraint firstItem="uuc-oj-UdB" firstAttribute="centerY" secondItem="UkJ-xN-IJJ" secondAttribute="centerY" id="JEn-b2-hCB"/>
@@ -850,7 +864,7 @@
                             <constraint firstAttribute="trailing" secondItem="BHV-Mo-fuf" secondAttribute="trailing" constant="20" id="roX-La-fzK"/>
                             <constraint firstItem="i77-se-54n" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="seV-eg-rQ6"/>
                             <constraint firstItem="D4C-5b-qvL" firstAttribute="leading" secondItem="2Ch-xh-wZB" secondAttribute="trailing" constant="10" id="ugR-UO-b2f"/>
-                            <constraint firstItem="nTw-F0-6Cy" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="vme-eY-5eN"/>
+                            <constraint firstItem="nTw-F0-6Cy" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="vme-eY-5eN"/>
                             <constraint firstItem="BHV-Mo-fuf" firstAttribute="leading" secondItem="nTw-F0-6Cy" secondAttribute="trailing" constant="10" id="wYd-ZD-bg6"/>
                             <constraint firstAttribute="trailing" secondItem="XYE-1j-g2h" secondAttribute="trailing" constant="10" id="yT9-UP-KBy"/>
                         </constraints>
@@ -860,6 +874,7 @@
                         <outlet property="classHeaderField" destination="UkJ-xN-IJJ" id="ocO-pA-JUp"/>
                         <outlet property="fileName" destination="aiH-c4-yka" id="FP4-0v-Emj"/>
                         <outlet property="inputJsonField" destination="wZM-aD-vEd" id="Y7N-db-Udr"/>
+                        <outlet property="nullSwitch" destination="Bn1-mK-y2z" id="X6g-a3-qsU"/>
                         <outlet property="outFieldBtn" destination="D4C-5b-qvL" id="676-Pq-vHh"/>
                         <outlet property="outPathField" destination="2Ch-xh-wZB" id="dUY-EY-1Ub"/>
                         <outlet property="tipLabel" destination="XYE-1j-g2h" id="zcu-v2-rr0"/>
@@ -867,7 +882,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="717"/>
+            <point key="canvasLocation" x="35.5" y="717"/>
         </scene>
     </scenes>
 </document>
